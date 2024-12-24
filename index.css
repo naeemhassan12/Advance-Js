@@ -1,0 +1,13 @@
+.form
+{
+    width: 30%;
+    height: 200px;
+    border: 1px solid red;
+    margin: 10px auto;
+}
+label
+{
+    width: 150px;
+    height: 40px;
+    margin: 5px;    
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance in advance JavaScript</title>
+</head>
+<body>
+    <script>
+       class A {
+        constructor(name ,age , salary) {
+            this.empname = name;
+            this.empage = age;
+            this.empsalary = salary;
+        }
+        info()
+        {
+            let ta = 1000;
+            let pa = 500;
+            let ca = 5000;
+            let packeta= 2000;
+            let totalsalary = this.empsalary + ta +pa +ca + packeta;
+            document.write(`<h2>Employee Class</h2>     
+                        Name: ${this.empname}<br>
+                        Age :  ${this.empage}<br>
+                         Salary : ${totalsalary}<br>`)
+        }
+       }
+       class B extends A
+       {
+        info()
+        {
+            let ta = 1000;
+            let pa = 500;
+            let ca = 5000;
+            let packeta= 2000;
+            let totalsalary = this.empsalary + ta +pa +ca + packeta;
+            document.write(`<h2>Student Class</h2>     
+                        Name: ${this.empname}<br>
+                        Age :  ${this.empage}<br>
+                         Salary : ${totalsalary}<br>`)  
+        }
+       }
+       let a = new A("Naeem", 22, 20000);
+       let b = new B("Waseem", 20, 50000);
+       a.info();
+       b.info();
+       
+    </script>
+</body>
+</html>

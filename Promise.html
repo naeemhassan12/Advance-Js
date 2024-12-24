@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise using advance </title>
+
+    <script>
+        function prom(complete)
+        {
+            return new Promise(function(resolve,reject) {
+                console.log("please wait data is loading......");
+           setTimeout  (() =>
+        {
+            if(complete)
+        {
+            resolve("i am successful........");
+        }
+        else
+        {
+            reject("i am failed........");
+        }
+        },9000)
+        });
+        }
+            let onfullment = (results) =>
+        {
+            console.log(results);
+        }
+        let onrejection = (error) =>
+        {
+            console.log(error);
+        }
+
+        prom(true).then(onfullment) .catch(onrejection);
+    </script>
+</head>
+<body>
+
+    <script>
+        //let complete = true; variable through value 
+        function prom(complete)  //function k through value....
+        {
+            return new Promise(function(resolve,reject) //value true or false
+            {
+                if (complete) { 
+                    resolve("i am successfull");
+                }
+                else
+                {
+                    reject("i am failed......");
+                }
+            });
+        }
+        
+
+    console.log(prom(false));  //true an arguments value show
+    </script>
+</body>
+</html>

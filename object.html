@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object in advance JavaScript</title>
+</head>
+<body>
+    <script>
+        // var a = {
+        //     firstName: "Muhammad Naeem",
+        //     lastName: "Khan",
+        //     Address: "Dera Ismail khan",
+        //     City: "Peshawar",
+        //     Age: 22,
+        //     Name: ['Ayshea','Nadeem','Farooq','Ayshea','Nadeem','Farooq'],
+        //     living: 
+        //     {
+        //         'city': 'Lahore',
+        //         'Country': 'Pakistan'
+        //     },
+        //     Salary: function()
+        //     {
+        //         return 2500;
+        //     },
+        //     fullName: function()
+        //     {
+        //         return this.firstName + " " + this.lastName;
+
+        //     },
+            
+        // }
+        // document.write(a);
+        // console.log(a.living.Country);
+        const name1 = 'studentName';
+
+        const obj =
+        {
+            name1: 'Naeem khan',
+            city: 'Peshawar',
+            program: 'Software Engineering',
+            details: function()
+            {
+                return `${this.name1} living in on abdara road nearly motor station${this.city}. Student of ${this.program}`
+            }
+        }
+        console.log(obj);
+        console.log(obj.details());
+    </script>
+</body>
+</html>

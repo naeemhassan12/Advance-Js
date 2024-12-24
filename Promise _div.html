@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise using in calculation.... </title>
+
+    
+    <script>
+        function prom(a,b)
+        {
+            return new Promise(function(resolve,reject) {
+                var c = a/b;
+                console.log("please wait data is loading......");
+           setTimeout  (() =>
+        {
+            if(a,b)
+        {
+            resolve(`Your answers is ${c}`);
+        }
+        else
+        {
+            reject( "failed ia calculate..");
+        }
+        },2000)
+        });
+        }
+            let onfullment = (results) =>
+        {
+            console.log(results);
+        }
+        let onrejection = (error) =>
+        {
+            console.log(error);
+        }
+
+        prom(222,100).then(onfullment) .catch(onrejection);
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

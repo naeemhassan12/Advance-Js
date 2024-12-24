@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator in advance JavaScript</title>
+</head>
+<body>
+    <script>
+        function sum(name, course,depth, ...args)
+        {
+            console.log(arguments);
+            document.write(` ${name} of ${course} depth ${depth}=`);
+
+                let sum = 0;
+                for(let i in args)
+            {
+                sum += args[i];
+            }
+                        document.write(sum, "<br>");
+            }
+        
+            sum("Muhammad Naeem Khan","PHP","BSSE",20,30,40);
+            sum("Naeem khan", "C++:","CS", 40,60);
+            sum("Waseem khan", "HTML:","English", 400,60);
+            sum("Moeem khan", "CSS","CS", 40,600);
+        
+    </script>
+</body>
+</html>

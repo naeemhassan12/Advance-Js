@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP in advance JavaScript</title>
+</head>
+<body>
+    <p>OOP stand for Object Oriented Programming</p>
+    <script>
+       class student {
+        constructor(name,age) {
+            this.studentname = name;
+            this.studentage = age;
+            console.log("Hello Everything.." )
+        }
+        hello()
+        {
+            console.log(`Hello  ${this.studentname} your age is  ${this.studentage}`);
+        }
+       }
+       let a = new student('waseem khan', 20);
+       let b = new student('adil',25);
+       a.hello();
+       b.hello()
+       
+    </script>
+</body>
+</html>
